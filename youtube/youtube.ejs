@@ -1,0 +1,25 @@
+<%- include("../includes/head") %>
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  
+    <main>
+        <div>
+            <h1>Download <span>Music</span>.AI</h1>
+        </div>
+        <div>
+            <%- include("../includes/searchBox") %>
+        </div>
+        <div>
+            <h4><span style="color:Red">Note</span>:it's Better to add the author name
+                (Ex:Hello by<span style="color:Red"> Adele</span>)
+            </h4>
+        </div>
+    </main>
+
+    
+    <%if(error){%>
+        <script>alert("Error:Try Again")</script>
+            <%}%>
+    <%- include("../includes/foot") %>
